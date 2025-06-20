@@ -35,7 +35,7 @@ jobs:
         uses: actions/configure-pages@v5
       - uses: actions/setup-node@v4
       - run: npm install
-      - run: npm run build
+      - run: npm run build -- --base=/lab13/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
